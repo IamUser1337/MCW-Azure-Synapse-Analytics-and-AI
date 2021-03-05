@@ -218,7 +218,7 @@ Over the past 5 years, Wide World Importers has amassed over 3 billion rows of s
       );
     ```
 
-4. From the top toolbar, select the **Discard all** button as we will not be saving this query. When prompted, choose to **Discard changes**.
+4. From the top toolbar, select the **Bin Icon** button as we will not be saving this query. When prompted, choose to **Discard changes**.
 
    ![The top toolbar menu is displayed with the Discard all button highlighted.](media/toptoolbar_discardall.png "Discarding all changes")
   
@@ -267,10 +267,8 @@ The data that we will be retrieving to populate the sale table is currently stor
 
 7. Now we will need to define the destination dataset for our data. In this case we will be storing sale data in our SQL Pool. Create a new dataset by expanding the **+** button on the **Data** blade and selecting **Integration dataset**.
 
-8. On the **New integration dataset** blade, enter **Azure Synapse** as a search term and select the **Azure Synapse Analytics** item. Select **Continue**.
-
-    ![The New integration dataset form is shown with Azure Synapse entered in the search box and the Azure Synapse Analytics item highlighted.](media/dataset_azuresynapseanalytics.png "Azure Synapse Analytics Dataset")
-
+8. On the **New integration dataset** blade, with the **Azure** tab selected, enter **synapse** as a search term and select the **Azure Synapse Analytics** item. Select **Continue**.
+  
 9. On the **Set properties** blade, set the field values to the following, then select **OK**.
 
    | Field | Value |
@@ -387,7 +385,7 @@ The data that we will be retrieving to populate the sale table is currently stor
 
     ![On the pipeline runs screen, a successful pipeline run is highlighted in the table.](media/pipeline_run_sales_successful.png "Successful pipeline indicator")
 
-29. Verify the table has populated by creating a new query. Select the **Develop** item from the left menu, and in the **Develop** blade, expand the **+** button, and select **SQL script**. In the query window, be sure to connect to the SQL Pool database (`SQLPool01`), then paste and run the following query. When complete, select the **Discard all** button from the top toolbar.
+29. Verify the table has populated by creating a new query. Select the **Develop** item from the left menu, and in the **Develop** blade, expand the **+** button, and select **SQL script**. In the query window, be sure to connect to the SQL Pool database (`SQLPool01`), then paste and run the following query. When complete, select the **Bin Icon** button from the top toolbar.
 
   ```sql
     select count(TransactionId) from wwi_mcw.SaleSmall;
@@ -426,7 +424,7 @@ Over the past 5 years, Wide World Importers has amassed over 3 billion rows of s
 
    ![The query tab toolbar is displayed with the Run button selected.](media/querytoolbar_run.png "Running the query")
 
-4. From the top toolbar, select the **Discard all** button as we will not be saving this query. When prompted, choose to **Discard changes**.
+4. From the top toolbar, select the **Bin Icon** button as we will not be saving this query. When prompted, choose to **Discard changes**.
 
    ![The top toolbar menu is displayed with the Discard all button highlighted.](media/toptoolbar_discardall.png "Discard all changes")
 
@@ -460,9 +458,9 @@ Over the past 5 years, Wide World Importers has amassed over 3 billion rows of s
 
 5. Now we will need to define the destination dataset for our data. In this case we will be storing customer information data in our SQL Pool. On the **Data** blade, expand the **+** button and select **Integration dataset**.
 
-6. On the **New integration dataset** blade, enter **Azure Synapse** as a search term and select the **Azure Synapse Analytics** item. Select **Continue**.
+6. On the **New integration dataset** blade, with the **Azure** tab selected, enter **synapse** as a search term and select the **Azure Synapse Analytics** item. Select **Continue**.
 
-    ![The New integration dataset form is shown with Azure Synapse entered in the search box and the Azure Synapse Analytics item highlighted.](media/dataset_azuresynapseanalytics.png "Azure Synapse Analytics Dataset")
+    ![On the New dataset blade, synapse is entered as the search term and Azure Synapse Analytics is selected from the filtered results.](media/newdataset_synapseitem.png "Selecting Azure Synapse Analytics as the dataset type")
 
 7. On the **Set properties** blade, set the field values to the following, then select **OK**.
 
@@ -525,7 +523,7 @@ Over the past 5 years, Wide World Importers has amassed over 3 billion rows of s
   
     ![On the pipeline runs screen, a successful pipeline run is highlighted in the table.](media/pipeline_run_customerinfo_successful.png "Successful pipeline run indicator")
 
-20. Verify the table has populated by creating a new query. Remember from **Task 1**, select the **Develop** item from the left menu, and in the **Develop** blade, expand the **+** button, and select **SQL script**. In the query window, be sure to connect to the SQL Pool database (`SQLPool01`), then paste and run the following query. When complete, select the **Discard all** button from the top toolbar.
+20. Verify the table has populated by creating a new query. Remember from **Task 1**, select the **Develop** item from the left menu, and in the **Develop** blade, expand the **+** button, and select **SQL script**. In the query window, be sure to connect to the SQL Pool database (`SQLPool01`), then paste and run the following query. When complete, select the **Bin Icon** button from the top toolbar.
 
   ```sql
     select * from wwi_mcw.CustomerInfo;
@@ -567,7 +565,7 @@ The campaign analytics table will be queried primarily for dashboard and KPI pur
 
     ![The query tab toolbar is displayed with the Run button selected.](media/querytoolbar_run.png "Running the query")
 
-4. From the top toolbar, select the **Discard all** button as we will not be saving this query. When prompted, choose to **Discard changes**.
+4. From the top toolbar, select the **Bin Icon** button as we will not be saving this query. When prompted, choose to **Discard changes**.
 
    ![The top toolbar menu is displayed with the Discard all button highlighted.](media/toptoolbar_discardall.png "Discard all changes")
 
@@ -610,9 +608,9 @@ Similar to the customer information table, we will also be populating the campai
 
 6. Now we will need to define the destination dataset for our data. In this case we will be storing campaign analytics data in our SQL Pool. On the **Data** blade, expand the **+** button and select **Integration dataset**.
 
-7. On the **New integration dataset** blade, enter **Azure Synapse** as a search term and select the **Azure Synapse Analytics** item. Select **Continue**.
+7. On the **New integration dataset** blade, with the **Azure** tab selected, enter **synapse** as a search term and select the **Azure Synapse Analytics** item. Select **Continue**.
 
-    ![The New integration dataset form is shown with Azure Synapse entered in the search box and the Azure Synapse Analytics item highlighted.](media/dataset_azuresynapseanalytics.png "Azure Synapse Analytics Dataset")
+    ![On the New dataset blade, synapse is entered as the search term and Azure Synapse Analytics is selected from the filtered results.](media/newdataset_synapseitem.png "Selecting the dataset type")
   
 8. On the **Set properties** blade, set the field values to the following, then select **OK**.
 
@@ -768,7 +766,7 @@ Similar to the customer information table, we will also be populating the campai
   
     ![The Activities menu of the pipeline is displayed with the Move and transform section expanded. An arrow indicating a drag operation shows adding a Data flow activity to the design surface of the pipeline.](media/pipeline_sales_dataflowactivitymenu.png "Adding a data flow activity to the pipeline")
 
-31. In the **Adding data flow** blade, select the data flow **ASAMCW_Exercise_2_Campaign_Analytics_Data**, then **Finish**. Select the Mapping Data Flow activity on the design surface.
+31. In the **Adding data flow** blade, select the data flow **ASAMCW_Exercise_2_Campaign_Analytics_Data**, then **OK**. Select the Mapping Data Flow activity on the design surface.
 
 32. In the bottom pane, select the **Settings** tab and set the form fields to the following values:
 
@@ -793,7 +791,7 @@ Similar to the customer information table, we will also be populating the campai
 
 36. You should see a run of the pipeline we created in the **Pipeline runs** table showing as in progress. You will need to refresh this table from time to time to see updated progress. Once it has completed. You should see the pipeline run displayed with a Status of **Succeeded**.
 
-37. Verify the table has populated by creating a new query. Select the **Develop** item from the left menu, and in the **Develop** blade, expand the **+** button, and select **SQL script**. In the query window, be sure to connect to the SQL Pool database (`SQLPool01`), then paste and run the following query. When complete, select the **Discard all** button from the top toolbar.
+37. Verify the table has populated by creating a new query. Select the **Develop** item from the left menu, and in the **Develop** blade, expand the **+** button, and select **SQL script**. In the query window, be sure to connect to the SQL Pool database (`SQLPool01`), then paste and run the following query. When complete, select the **Bin Icon** button from the top toolbar.
 
   ```sql
     select count(Region) from wwi_mcw.CampaignAnalytics;
@@ -811,7 +809,7 @@ When the lab environment was provisioned, the **wwi_mcw.Product** table and data
 
 4. You should see a run of the pipeline we created in the **Pipeline runs** table showing as in progress (or succeeded). Once it has completed. You should see the pipeline run displayed with a Status of **Succeeded**.
 
-5. Verify the table has populated by creating a new query. Select the **Develop** item from the left menu, and in the **Develop** blade, expand the **+** button, and select **SQL script**. In the query window, be sure to connect to the SQL Pool database (`SQLPool01`), then paste and run the following query. When complete, select the **Discard all** button from the top toolbar.
+5. Verify the table has populated by creating a new query. Select the **Develop** item from the left menu, and in the **Develop** blade, expand the **+** button, and select **SQL script**. In the query window, be sure to connect to the SQL Pool database (`SQLPool01`), then paste and run the following query. When complete, select the **Bin Icon** button from the top toolbar.
 
   ```sql
     select * from wwi_mcw.Product;
@@ -1002,7 +1000,7 @@ A common format for exporting and storing data is with text based files. These c
 
     ![The result of the previous aggregation query is displayed as a chart in the Results pane.](media/querycsv_serverless_chart.png "Aggregation query results")
 
-6. From the top toolbar, select the **Discard all** button as we will not be saving this query. When prompted, choose to **Discard changes**.
+6. From the top toolbar, select the **Bin Icon** button as we will not be saving this query. When prompted, choose to **Discard changes**.
 
    ![The top toolbar menu is displayed with the Discard all button highlighted.](media/toptoolbar_discardall.png "Discard changes")
 
@@ -1039,7 +1037,7 @@ A common format for exporting and storing data is with text based files. These c
     ) AS products
     ```
 
-4. From the top toolbar, select the **Discard all** button as we will not be saving this query. When prompted, choose to **Discard changes**.
+4. From the top toolbar, select the **Bin Icon** button as we will not be saving this query. When prompted, choose to **Discard changes**.
 
    ![The top toolbar menu is displayed with the Discard all button highlighted.](media/toptoolbar_discardall.png "Discard changes")
 
@@ -1132,7 +1130,7 @@ In this exercise you will create a Synapse Pipeline that will orchestrate updati
     | Region | Select  the lab region. |
     | Name  | Enter a unique name (denoted by the green checkmark indicator) for the form recognition service. |
     | Pricing Tier | Select **Free F0**. |
-    | Confirmation checkbox | Checked. |
+    
   
     ![The Form Recognizer configuration screen is displayed populated with the preceding values.](media/ex5-task2a-03.png "Form Recognizer configuration screen")
 
@@ -1347,7 +1345,7 @@ In this exercise you will create a Synapse Pipeline that will orchestrate updati
       );
     ```
 
-5. From the top toolbar, select the **Discard all** button as we will not be saving this query. When prompted, choose to **Discard changes**.
+5. From the top toolbar, select the **Bin Icon** button as we will not be saving this query. When prompted, choose to **Discard changes**.
 
    ![The top toolbar menu is displayed with the Discard all button highlighted.](media/toptoolbar_discardall.png "Discard changes")
 
@@ -1457,9 +1455,9 @@ In this exercise you will create a Synapse Pipeline that will orchestrate updati
 
     ![The sink tab is shown with the output stream name set to SQLDatabase and the +New button selected next to the Dataset field.](media/ex5-task4-034.png "The Sink tab")
 
-33. On the **New integration dataset** blade, enter **Azure Synapse** as a search term and select the **Azure Synapse Analytics** item. Select **Continue**.
+33. On the **New dataset** blade, select the **Azure** tab. Select **Azure Synapse Analytics** and select **Continue**.
 
-    ![The New integration dataset form is shown with Azure Synapse entered in the search box and the Azure Synapse Analytics item highlighted.](media/dataset_azuresynapseanalytics.png "Azure Synapse Analytics Dataset")
+    ![Azure Synapse Analytics is selected in a list of dataset types.](media/ex5-task4-035.png "Selecting the Azure Synapse Analytics dataset type")
 
 34. Set the name of the Dataset to **InvoiceTable** and choose the **sqlpool01** Linked service. Choose **Select from existing table** and choose the **wwi_mcw.Invoices** table. If you don't see it in the list of your table names, select the **Refresh** button and it should show up. Select **OK**.
 
@@ -1588,7 +1586,7 @@ It is important to identify data columns of that hold sensitive information. Typ
 
     ![The query tab toolbar is displayed with the Run button selected.](media/querytoolbar_run.png "Running a SQL Query")
 
-3. From the top toolbar, select the **Discard all** button as we will not be saving this query. When prompted, choose to **Discard changes**.
+3. From the top toolbar, select the **Bin Icon** button as we will not be saving this query. When prompted, choose to **Discard changes**.
 
    ![The top toolbar menu is displayed with the Discard all button highlighted.](media/toptoolbar_discardall.png "Discard changes")
 
@@ -1673,7 +1671,7 @@ In many organizations it is important to filter certain rows of data by user. In
 
     ![The query tab toolbar is displayed with the Run button selected.](media/querytoolbar_run.png "Running a query")
 
-3. From the top toolbar, select the **Discard all** button as we will not be saving this query. When prompted, choose to **Discard changes**.
+3. From the top toolbar, select the **Bin Icon** button as we will not be saving this query. When prompted, choose to **Discard changes**.
 
    ![The top toolbar menu is displayed with the Discard all button highlighted.](media/toptoolbar_discardall.png "Discard changes")
 
@@ -1749,7 +1747,7 @@ As an alternative to column level security, SQL Administrators also have the opt
 
     ![The query tab toolbar is displayed with the Run button selected.](media/querytoolbar_run.png "Running a query")
 
-3. From the top toolbar, select the **Discard all** button as we will not be saving this query. When prompted, choose to **Discard changes**.
+3. From the top toolbar, select the **Bin Icon** button as we will not be saving this query. When prompted, choose to **Discard changes**.
 
    ![The top toolbar menu is displayed with the Discard all button highlighted.](media/toptoolbar_discardall.png "Discard changes")
 
@@ -1894,7 +1892,7 @@ In this exercise, you will create multiple machine learning models. You will lea
 
 ### Task 4: Leverage Automated ML to create and deploy a Product Seasonality Classifier model
 
-1. In Azure Machine Learning (AML) Studio, select **Experiments** from the left menu, then expand the **+ Create** button, and select **Automated ML run**.
+1. In Azure Machine Learning (AML) Studio, select **New**, and select **Automated ML run**.
 
     ![The AML Studio Experiments screen is shown with the Create button expanded and the Automated ML run item selected.](media/aml_experiment_create.png "The AML Studio Experiments screen")
 
